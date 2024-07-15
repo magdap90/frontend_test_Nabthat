@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body>
+  <div class="header">
+    <div class="image-box">
+      <a href="/" class="image-link">
+        <img src="public/images/HTML5.svg" alt="image" loading="lazy" height="50" width="50" class="image1"/>
+        <img src="public/images/HTML5_hover.svg" alt="image" loading="lazy" height="50" width="50"  class="image2"/>
+      </a>
+    </div>
+    <div>
+      <div class="task">Zadanie <strong>rekrutacyjne</strong></div>
+      <div class="my-data" style="display: none"> Magdalena Paszko</div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div>
+      <h1>Nagłówek H1</h1>
+      <div class="block-box">
+        <div class="box box-one">
+          <div class="title-box">BLOK PIERWSZY</div>
+          <div>
+            <div class="radio-box">
+              <i class="fa-regular fa-circle"></i>
+              <input type="radio" name="option" value="one" id="one" hidden>
+              <label for="one"> Opcja pierwsza</label>
+            </div>
+            <div class="radio-box">
+              <i class="fa-regular fa-circle"></i>
+              <input type="radio" name="option" value="second" id="second" hidden>
+              <label for="second">Opcja druga</label>
+            </div>
+            <div class="radio-box">
+              <i class="fa-regular fa-circle"></i>
+              <input type="radio" name="option" value="random" id="random" hidden>
+              <label for="random">Opcja losowa</label>
+            </div>
+          </div>
+        </div>
+        <div class="box box-second">
+          <div class="title-box">BLOK DRUGI</div>
+          <div class="button-box">
+            <button class="button button-replace my-button" value="replace">ZASTĄP</button>
+            <button class="button button-add my-button" value="add">DOKLEJ</button>
+          </div>
+        </div>
+        <div class="box box-random">
+          <div class="title-box">BLOK Z DŁUGĄ NAZWA KTÓRA SAMA SIE PRZYTNIE, JEGO ZAWARTOŚĆ PRZEKRACZA SZEROKOŚĆ KONTENERA</div>
+          <div class="box-text">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <div class="footer">
+      <div class="css-is-awesome">
+        <div class="text">CSS <br>IS <br> AWESOME</div>
+      </div>
+      <div class="logo">
+        nabthat
+      </div>
+      <div class="show-box">
+        <input class="input-show-button" type="checkbox" id="toggle-button" hidden>
+        <label for="toggle-button" class="show-button my-button">POKAŻ<i class="fa-solid fa-chevron-up"></i></label>
+        <div class="list-box">
+          <div>
+            <div class="clear-data"> <i class="fa-solid fa-chevron-right"></i> ZRESETUJ USTAWIENIA</div>
+            <div class="show-data"> <i class="fa-solid fa-chevron-right"></i> POKAZ DANE OSOBOWE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>
