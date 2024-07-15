@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "sass-compile": "sass --no-source-map src/css/main.scss public/css/main.css",
-    "sass-watch": "sass --no-source-map src/css/main.scss public/css/main.css",
+    "sass-watch": "sass --no-source-map --watch src/css/main.scss public/css/main.css",
     "nodemon-watch": "nodemon index.js -e *",
     "uglify": "uglifyjs src/js/*.js -m -c -o public/js/main.js",
     "watch:js": "onchange \"src/js/**/*.js\" -- npm run uglify",

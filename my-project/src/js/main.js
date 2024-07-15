@@ -20,3 +20,26 @@
 //    });
 // });
 console.log('xxxxxxxxxxxxx');
+const jsonUrl = "https://test-nabthat.netlify.app/public/json/data.json";
+
+fetch(jsonUrl)
+    .then(response => response.text()) // Pobranie danych jako tekst
+    .then(text => {
+        // Przetworzenie danych na obiekt JavaScript za pomocą JSON.parse()
+        const jsonData = JSON.parse(text);
+
+        // Przykładowe użycie danych
+        processData(jsonData);
+    })
+    .catch(error => {
+        console.error('Błąd podczas pobierania danych:', error);
+    });
+
+function processData(data) {
+    // Funkcja do przetwarzania danych
+    console.log('Dane przetworzone:', data);
+}
+
+let listOptions = document.querySelectorAll('input[name="option"]');
+console.log('listOptions')
+console.log(listOptions)

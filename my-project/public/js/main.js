@@ -1,1 +1,1 @@
-console.log("xxxxxxxxxxxxx");
+console.log("xxxxxxxxxxxxx");let jsonUrl="https://test-nabthat.netlify.app/public/json/data.json";function processData(o){console.log("Dane przetworzone:",o)}fetch(jsonUrl).then(o=>o.text()).then(o=>{processData(JSON.parse(o))}).catch(o=>{console.error("Błąd podczas pobierania danych:",o)});
