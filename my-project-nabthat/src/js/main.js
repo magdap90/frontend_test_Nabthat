@@ -81,19 +81,20 @@ function processData(data) {
             });
         });
     });
+
+    function addElement(text, value, listElement, boxText){
+        if (!listElement.includes(value) && listElement.length !== listDescriptions.length-1) {
+            let div = document.createElement('div');
+            div.innerText = text;
+            div.setAttribute('value', value);
+            boxText.appendChild(div);
+            addIfNotExist(listElement, parseInt(value));
+            return true;
+        }
+        return false;
+    }
 }
 
-function addElement(text, value, listElement, boxText){
-    if (!listElement.includes(value) && listElement.length !== listDescriptions.length-1) {
-        let div = document.createElement('div');
-        div.innerText = text;
-        div.setAttribute('value', value);
-        boxText.appendChild(div);
-        addIfNotExist(listElement, parseInt(value));
-        return true;
-    }
-    return false;
-}
 function addIfNotExist(list, value) {
     if (!list.includes(value)) {
         list.push(value);
