@@ -12,7 +12,7 @@ export default defineConfig({
                 { src: 'src/images/*', dest: 'public/images' },
                 { src: 'src/json/*', dest: 'public/json' },
             ],
-            hook: 'writeBundle', // Kopiuj pliki po zakończeniu procesu budowania
+            hook: 'writeBundle',
         }),
     ],
 });
